@@ -44,6 +44,7 @@ def play(songs)
     play(songs)
   end
   until command = "exit"
+  help
   puts "Please enter a command:"
   command = gets.strip
   end
