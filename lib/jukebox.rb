@@ -43,4 +43,6 @@ def play(songs)
   when "play" 
     play(songs)
   end
+  until command = "exit"
+  puts "pl"
 end
