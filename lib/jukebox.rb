@@ -38,14 +38,13 @@ def play(songs)
     exit_jukebox
   when "list"
     list(songs)
+    run(songs)
   when "help"
     help 
+    run(songs)
   when "play" 
     play(songs)
+    run(songs)
   end
-  until command = "exit"
-  help
-  puts "Please enter a command:"
-  command = gets.strip
-  end
+
 end
